@@ -1,8 +1,18 @@
 Run action
-Set up job
+Set up job - Lint Python Files
+Job ID: lint-python-job-1
+Duration: 45s
 Run actions/checkout@v3
 Run actions/setup-python@v4
 Install dependencies
-Run lint checks
-Run unit tests
+Run flake8 lint checks
+Job completed successfully.
+
+Set up job - Lint JavaScript Files
+Job ID: lint-javascript-job-2
+Duration: 52s
+Run actions/checkout@v3
+Run actions/setup-node@v3
+Install npm dependencies
+Run ESLint checks
 Job completed successfully.

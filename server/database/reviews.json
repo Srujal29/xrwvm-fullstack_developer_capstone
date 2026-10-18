@@ -1,6 +1,42 @@
 {
   "reviews": [
     {
+      "id": 1001,
+      "name": "Alex Johnson",
+      "dealership": 1,
+      "review": "Outstanding dealership experience! Clean showroom, knowledgeable sales staff, and smooth financing.",
+      "purchase": true,
+      "purchase_date": "02/15/2023",
+      "car_make": "Toyota",
+      "car_model": "Camry",
+      "car_year": 2022,
+      "sentiment": "positive"
+    },
+    {
+      "id": 1002,
+      "name": "Sarah Miller",
+      "dealership": 1,
+      "review": "Great selection of cars and transparent pricing. Very happy with my purchase.",
+      "purchase": true,
+      "purchase_date": "05/20/2023",
+      "car_make": "Honda",
+      "car_model": "Accord",
+      "car_year": 2021,
+      "sentiment": "positive"
+    },
+    {
+      "id": 1003,
+      "name": "Michael Davis",
+      "dealership": 1,
+      "review": "Fast service and friendly team. Test drive went without any hassle.",
+      "purchase": true,
+      "purchase_date": "08/10/2023",
+      "car_make": "Nissan",
+      "car_model": "Altima",
+      "car_year": 2020,
+      "sentiment": "positive"
+    },
+    {
       "id": 1,
       "name": "Berkly Shepley",
       "dealership": 15,
@@ -9,7 +45,8 @@
       "purchase_date": "07/11/2020",
       "car_make": "Audi",
       "car_model": "A6",
-      "car_year": 2010
+      "car_year": 2010,
+      "sentiment": "positive"
     },
     {
       "id": 2,
@@ -20,7 +57,8 @@
       "purchase_date": "09/17/2020",
       "car_make": "Pontiac",
       "car_model": "Firebird",
-      "car_year": 1995
+      "car_year": 1995,
+      "sentiment": "positive"
     },
     {
       "id": 3,
@@ -31,7 +69,8 @@
       "purchase_date": "10/20/2020",
       "car_make": "Mazda",
       "car_model": "MX-5",
-      "car_year": 2003
+      "car_year": 2003,
+      "sentiment": "positive"
     },
     {
       "id": 4,
@@ -42,7 +81,8 @@
       "purchase_date": "03/28/2020",
       "car_make": "Kia",
       "car_model": "Spectra",
-      "car_year": 2002
+      "car_year": 2002,
+      "sentiment": "positive"
     },
     {
       "id": 5,
@@ -53,7 +93,8 @@
       "purchase_date": "04/12/2020",
       "car_make": "GMC",
       "car_model": "Yukon",
-      "car_year": 1992
+      "car_year": 1992,
+      "sentiment": "positive"
     },
     {
       "id": 6,
@@ -64,7 +105,8 @@
       "purchase_date": "10/05/2020",
       "car_make": "Chevrolet",
       "car_model": "Aveo",
-      "car_year": 2007
+      "car_year": 2007,
+      "sentiment": "positive"
     },
     {
       "id": 7,
@@ -75,7 +117,8 @@
       "purchase_date": "05/17/2020",
       "car_make": "Toyota",
       "car_model": "4Runner",
-      "car_year": 1994
+      "car_year": 1994,
+      "sentiment": "positive"
     },
     {
       "id": 8,
@@ -86,7 +129,8 @@
       "purchase_date": "05/06/2020",
       "car_make": "BMW",
       "car_model": "530",
-      "car_year": 2006
+      "car_year": 2006,
+      "sentiment": "positive"
     },
     {
       "id": 9,
@@ -97,7 +141,8 @@
       "purchase_date": "07/05/2020",
       "car_make": "Cadillac",
       "car_model": "Escalade ESV",
-      "car_year": 2003
+      "car_year": 2003,
+      "sentiment": "positive"
     },
     {
       "id": 10,
@@ -108,7 +153,8 @@
       "purchase_date": "05/18/2020",
       "car_make": "Dodge",
       "car_model": "Ram Van 3500",
-      "car_year": 1997
+      "car_year": 1997,
+      "sentiment": "positive"
     },
     {
       "id": 11,
@@ -119,7 +165,8 @@
       "purchase_date": "11/06/2020",
       "car_make": "Audi",
       "car_model": "A6",
-      "car_year": 1999
+      "car_year": 1999,
+      "sentiment": "positive"
     },
     {
       "id": 12,
@@ -130,7 +177,8 @@
       "purchase_date": "10/14/2020",
       "car_make": "Saab",
       "car_model": "9-5",
-      "car_year": 1999
+      "car_year": 1999,
+      "sentiment": "positive"
     },
     {
       "id": 13,
@@ -141,7 +189,8 @@
       "purchase_date": "07/25/2020",
       "car_make": "Lotus",
       "car_model": "Exige",
-      "car_year": 2004
+      "car_year": 2004,
+      "sentiment": "positive"
     },
     {
       "id": 14,
@@ -152,7 +201,8 @@
       "purchase_date": "09/17/2020",
       "car_make": "Alfa Romeo",
       "car_model": "Spider",
-      "car_year": 1994
+      "car_year": 1994,
+      "sentiment": "positive"
     },
     {
       "id": 15,
@@ -163,7 +213,8 @@
       "purchase_date": "12/31/2020",
       "car_make": "BMW",
       "car_model": "550",
-      "car_year": 2006
+      "car_year": 2006,
+      "sentiment": "positive"
     },
     {
       "id": 16,
@@ -174,7 +225,8 @@
       "purchase_date": "02/05/2021",
       "car_make": "Ford",
       "car_model": "F-Series",
-      "car_year": 2007
+      "car_year": 2007,
+      "sentiment": "positive"
     },
     {
       "id": 17,
@@ -185,7 +237,8 @@
       "purchase_date": "01/13/2021",
       "car_make": "BMW",
       "car_model": "Z3",
-      "car_year": 2001
+      "car_year": 2001,
+      "sentiment": "positive"
     },
     {
       "id": 18,
@@ -196,7 +249,8 @@
       "purchase_date": "06/20/2020",
       "car_make": "Ford",
       "car_model": "Taurus",
-      "car_year": 1996
+      "car_year": 1996,
+      "sentiment": "positive"
     },
     {
       "id": 19,
@@ -207,7 +261,8 @@
       "purchase_date": "11/14/2020",
       "car_make": "Mercedes-Benz",
       "car_model": "S-Class",
-      "car_year": 2003
+      "car_year": 2003,
+      "sentiment": "positive"
     },
     {
       "id": 20,
@@ -218,7 +273,8 @@
       "purchase_date": "01/12/2021",
       "car_make": "BMW",
       "car_model": "M5",
-      "car_year": 2008
+      "car_year": 2008,
+      "sentiment": "positive"
     },
     {
       "id": 21,
@@ -229,7 +285,8 @@
       "purchase_date": "10/23/2020",
       "car_make": "Mitsubishi",
       "car_model": "Lancer",
-      "car_year": 2010
+      "car_year": 2010,
+      "sentiment": "positive"
     },
     {
       "id": 22,
@@ -240,7 +297,8 @@
       "purchase_date": "05/01/2020",
       "car_make": "Mitsubishi",
       "car_model": "Endeavor",
-      "car_year": 2004
+      "car_year": 2004,
+      "sentiment": "positive"
     },
     {
       "id": 23,
@@ -251,7 +309,8 @@
       "purchase_date": "06/12/2020",
       "car_make": "Volkswagen",
       "car_model": "riolet",
-      "car_year": 1993
+      "car_year": 1993,
+      "sentiment": "positive"
     },
     {
       "id": 24,
@@ -262,7 +321,8 @@
       "purchase_date": "08/30/2020",
       "car_make": "Mazda",
       "car_model": "RX-8",
-      "car_year": 2009
+      "car_year": 2009,
+      "sentiment": "positive"
     },
     {
       "id": 25,
@@ -273,7 +333,8 @@
       "purchase_date": "03/06/2020",
       "car_make": "Volkswagen",
       "car_model": "New Beetle",
-      "car_year": 2001
+      "car_year": 2001,
+      "sentiment": "positive"
     },
     {
       "id": 26,
@@ -284,7 +345,8 @@
       "purchase_date": "05/16/2020",
       "car_make": "Volkswagen",
       "car_model": "Passat",
-      "car_year": 1987
+      "car_year": 1987,
+      "sentiment": "positive"
     },
     {
       "id": 27,
@@ -295,7 +357,8 @@
       "purchase_date": "04/09/2020",
       "car_make": "Ford",
       "car_model": "Explorer Sport Trac",
-      "car_year": 2000
+      "car_year": 2000,
+      "sentiment": "positive"
     },
     {
       "id": 28,
@@ -306,7 +369,8 @@
       "purchase_date": "01/27/2021",
       "car_make": "Porsche",
       "car_model": "911",
-      "car_year": 2007
+      "car_year": 2007,
+      "sentiment": "positive"
     },
     {
       "id": 29,
@@ -317,7 +381,8 @@
       "purchase_date": "06/17/2020",
       "car_make": "Honda",
       "car_model": "Odyssey",
-      "car_year": 1996
+      "car_year": 1996,
+      "sentiment": "positive"
     },
     {
       "id": 30,
@@ -328,7 +393,8 @@
       "purchase_date": "05/23/2020",
       "car_make": "Mercedes-Benz",
       "car_model": "CL-Class",
-      "car_year": 2010
+      "car_year": 2010,
+      "sentiment": "positive"
     },
     {
       "id": 31,
@@ -339,7 +405,8 @@
       "purchase_date": "11/13/2020",
       "car_make": "Pontiac",
       "car_model": "GTO",
-      "car_year": 2004
+      "car_year": 2004,
+      "sentiment": "positive"
     },
     {
       "id": 32,
@@ -350,7 +417,8 @@
       "purchase_date": "12/11/2020",
       "car_make": "Kia",
       "car_model": "Sedona",
-      "car_year": 2006
+      "car_year": 2006,
+      "sentiment": "positive"
     },
     {
       "id": 33,
@@ -361,7 +429,8 @@
       "purchase_date": "10/31/2020",
       "car_make": "Pontiac",
       "car_model": "GTO",
-      "car_year": 2004
+      "car_year": 2004,
+      "sentiment": "positive"
     },
     {
       "id": 34,
@@ -372,7 +441,8 @@
       "purchase_date": "02/08/2021",
       "car_make": "Mazda",
       "car_model": "Mazda6",
-      "car_year": 2013
+      "car_year": 2013,
+      "sentiment": "positive"
     },
     {
       "id": 35,
@@ -383,7 +453,8 @@
       "purchase_date": "08/12/2020",
       "car_make": "Chevrolet",
       "car_model": "TrailBlazer",
-      "car_year": 2004
+      "car_year": 2004,
+      "sentiment": "positive"
     },
     {
       "id": 36,
@@ -394,7 +465,8 @@
       "purchase_date": "10/18/2020",
       "car_make": "Chevrolet",
       "car_model": "Suburban 1500",
-      "car_year": 2001
+      "car_year": 2001,
+      "sentiment": "positive"
     },
     {
       "id": 37,
@@ -405,7 +477,8 @@
       "purchase_date": "10/10/2020",
       "car_make": "Lexus",
       "car_model": "IS F",
-      "car_year": 2009
+      "car_year": 2009,
+      "sentiment": "positive"
     },
     {
       "id": 38,
@@ -416,7 +489,8 @@
       "purchase_date": "01/06/2021",
       "car_make": "Saturn",
       "car_model": "L-Series",
-      "car_year": 2001
+      "car_year": 2001,
+      "sentiment": "positive"
     },
     {
       "id": 39,
@@ -427,7 +501,8 @@
       "purchase_date": "04/29/2020",
       "car_make": "Buick",
       "car_model": "Terraza",
-      "car_year": 2006
+      "car_year": 2006,
+      "sentiment": "positive"
     },
     {
       "id": 40,
@@ -438,7 +513,8 @@
       "purchase_date": "09/06/2020",
       "car_make": "Mazda",
       "car_model": "B-Series",
-      "car_year": 2005
+      "car_year": 2005,
+      "sentiment": "positive"
     },
     {
       "id": 41,
@@ -449,7 +525,8 @@
       "purchase_date": "12/20/2020",
       "car_make": "Isuzu",
       "car_model": "Rodeo",
-      "car_year": 1999
+      "car_year": 1999,
+      "sentiment": "positive"
     },
     {
       "id": 42,
@@ -460,7 +537,8 @@
       "purchase_date": "04/13/2020",
       "car_make": "Plymouth",
       "car_model": "Voyager",
-      "car_year": 1998
+      "car_year": 1998,
+      "sentiment": "positive"
     },
     {
       "id": 43,
@@ -471,7 +549,8 @@
       "purchase_date": "08/20/2020",
       "car_make": "Nissan",
       "car_model": "Altima",
-      "car_year": 2008
+      "car_year": 2008,
+      "sentiment": "positive"
     },
     {
       "id": 44,
@@ -482,7 +561,8 @@
       "purchase_date": "07/06/2020",
       "car_make": "Isuzu",
       "car_model": "i-350",
-      "car_year": 2006
+      "car_year": 2006,
+      "sentiment": "positive"
     },
     {
       "id": 45,
@@ -493,7 +573,8 @@
       "purchase_date": "05/29/2020",
       "car_make": "Volkswagen",
       "car_model": "Passat",
-      "car_year": 1996
+      "car_year": 1996,
+      "sentiment": "positive"
     },
     {
       "id": 46,
@@ -504,7 +585,8 @@
       "purchase_date": "07/04/2020",
       "car_make": "BMW",
       "car_model": "760",
-      "car_year": 2005
+      "car_year": 2005,
+      "sentiment": "positive"
     },
     {
       "id": 47,
@@ -515,7 +597,8 @@
       "purchase_date": "02/08/2021",
       "car_make": "Maybach",
       "car_model": "57",
-      "car_year": 2012
+      "car_year": 2012,
+      "sentiment": "positive"
     },
     {
       "id": 48,
@@ -526,7 +609,8 @@
       "purchase_date": "06/10/2020",
       "car_make": "Saturn",
       "car_model": "S-Series",
-      "car_year": 2001
+      "car_year": 2001,
+      "sentiment": "positive"
     },
     {
       "id": 49,
@@ -537,7 +621,8 @@
       "purchase_date": "01/26/2021",
       "car_make": "Mercedes-Benz",
       "car_model": "CL-Class",
-      "car_year": 1999
+      "car_year": 1999,
+      "sentiment": "positive"
     },
     {
       "id": 50,
@@ -548,7 +633,8 @@
       "purchase_date": "05/10/2020",
       "car_make": "Cadillac",
       "car_model": "DeVille",
-      "car_year": 1995
+      "car_year": 1995,
+      "sentiment": "positive"
     }
   ]
 }
