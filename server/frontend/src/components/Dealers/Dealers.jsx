@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import "./Dealers.css";
 import "../assets/style.css";
 import Header from '../Header/Header';
@@ -6,17 +7,15 @@ import review_icon from "../assets/reviewicon.png"
 
 const Dealers = () => {
   const [dealersList, setDealersList] = useState([]);
-  // let [state, setState] = useState("")
   let [states, setStates] = useState([])
+  let params = useParams();
+  let stateParam = params.state;
 
-  // let root_url = window.location.origin
   let dealer_url ="/djangoapp/get_dealers";
-  
   let dealer_url_by_state = "/djangoapp/get_dealers/";
  
   const filterDealers = async (state) => {
-    dealer_url_by_state = dealer_url_by_state+state;
-    const res = await fetch(dealer_url_by_state, {
+    const res = await fetch("/djangoapp/get_dealers/" + state, {
       method: "GET"
     });
     const retobj = await res.json();
@@ -43,8 +42,12 @@ const Dealers = () => {
     }
   }
   useEffect(() => {
-    get_dealers();
-  },[]);  
+    if (stateParam) {
+      filterDealers(stateParam);
+    } else {
+      get_dealers();
+    }
+  },[stateParam]);  
 
 
 let isLoggedIn = sessionStorage.getItem("username") != null ? true : false;

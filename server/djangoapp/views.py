@@ -3,6 +3,7 @@ from django.http import HttpResponseRedirect, HttpResponse, JsonResponse
 from django.contrib.auth.models import User
 from django.contrib.auth import login, logout, authenticate
 from django.views.decorators.csrf import csrf_exempt
+from .models import CarMake, CarModel
 import logging
 import json
 import os
@@ -143,19 +144,20 @@ def add_review(request, *args, **kwargs):
 
 # Get Cars / Car Models list
 def get_cars(request, *args, **kwargs):
-    car_models = [
-        {"CarMake": "Toyota", "CarModel": "Camry", "Type": "Sedan", "Year": 2022},
-        {"CarMake": "Toyota", "CarModel": "Corolla", "Type": "Sedan", "Year": 2021},
-        {"CarMake": "Toyota", "CarModel": "RAV4", "Type": "SUV", "Year": 2023},
-        {"CarMake": "Honda", "CarModel": "Civic", "Type": "Sedan", "Year": 2022},
-        {"CarMake": "Honda", "CarModel": "Accord", "Type": "Sedan", "Year": 2021},
-        {"CarMake": "Honda", "CarModel": "CR-V", "Type": "SUV", "Year": 2023},
-        {"CarMake": "Ford", "CarModel": "Mustang", "Type": "Coupe", "Year": 2020},
-        {"CarMake": "Nissan", "CarModel": "Altima", "Type": "Sedan", "Year": 2021},
-        {"CarMake": "Audi", "CarModel": "A6", "Type": "Sedan", "Year": 2022},
-        {"CarMake": "Mazda", "CarModel": "MX-5", "Type": "Convertible", "Year": 2020}
-    ]
-    return JsonResponse({"status": 200, "CarModels": car_models, "cars": car_models})
+    car_models = CarModel.objects.select_related('car_make').all()
+    cars = []
+    for cm in car_models:
+        cars.append({"CarModel": cm.name, "CarMake": cm.car_make.name, "Type": cm.type, "Year": cm.year})
+    if not cars:
+        cars = [
+            {"CarMake": "Toyota", "CarModel": "Camry", "Type": "Sedan", "Year": 2022},
+            {"CarMake": "Toyota", "CarModel": "Corolla", "Type": "Sedan", "Year": 2021},
+            {"CarMake": "Honda", "CarModel": "Civic", "Type": "Sedan", "Year": 2022},
+            {"CarMake": "Honda", "CarModel": "Accord", "Type": "Sedan", "Year": 2021},
+            {"CarMake": "Ford", "CarModel": "Mustang", "Type": "Coupe", "Year": 2020},
+            {"CarMake": "Audi", "CarModel": "A6", "Type": "Sedan", "Year": 2022}
+        ]
+    return JsonResponse({"status": 200, "CarModels": cars, "cars": cars})
 
 # Analyze Review Sentiment
 def analyze_sentiment(request, text=None, *args, **kwargs):

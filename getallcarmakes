@@ -2,126 +2,114 @@
   "status": 200,
   "CarModels": [
     {
-      "CarMake": "Toyota",
       "CarModel": "Camry",
-      "Type": "Sedan",
+      "CarMake": "Toyota",
+      "Type": "SEDAN",
       "Year": 2022
     },
     {
-      "CarMake": "Toyota",
       "CarModel": "Corolla",
-      "Type": "Sedan",
-      "Year": 2021
-    },
-    {
       "CarMake": "Toyota",
+      "Type": "SEDAN",
+      "Year": 2021
+    },
+    {
       "CarModel": "RAV4",
+      "CarMake": "Toyota",
       "Type": "SUV",
       "Year": 2023
     },
     {
-      "CarMake": "Honda",
       "CarModel": "Civic",
-      "Type": "Sedan",
+      "CarMake": "Honda",
+      "Type": "SEDAN",
       "Year": 2022
     },
     {
-      "CarMake": "Honda",
       "CarModel": "Accord",
-      "Type": "Sedan",
+      "CarMake": "Honda",
+      "Type": "SEDAN",
       "Year": 2021
     },
     {
-      "CarMake": "Honda",
       "CarModel": "CR-V",
+      "CarMake": "Honda",
       "Type": "SUV",
       "Year": 2023
     },
     {
-      "CarMake": "Ford",
       "CarModel": "Mustang",
-      "Type": "Coupe",
+      "CarMake": "Ford",
+      "Type": "COUPE",
       "Year": 2020
     },
     {
-      "CarMake": "Nissan",
       "CarModel": "Altima",
-      "Type": "Sedan",
+      "CarMake": "Nissan",
+      "Type": "SEDAN",
       "Year": 2021
     },
     {
-      "CarMake": "Audi",
       "CarModel": "A6",
-      "Type": "Sedan",
+      "CarMake": "Audi",
+      "Type": "SEDAN",
       "Year": 2022
-    },
-    {
-      "CarMake": "Mazda",
-      "CarModel": "MX-5",
-      "Type": "Convertible",
-      "Year": 2020
     }
   ],
   "cars": [
     {
-      "CarMake": "Toyota",
       "CarModel": "Camry",
-      "Type": "Sedan",
+      "CarMake": "Toyota",
+      "Type": "SEDAN",
       "Year": 2022
     },
     {
-      "CarMake": "Toyota",
       "CarModel": "Corolla",
-      "Type": "Sedan",
-      "Year": 2021
-    },
-    {
       "CarMake": "Toyota",
+      "Type": "SEDAN",
+      "Year": 2021
+    },
+    {
       "CarModel": "RAV4",
+      "CarMake": "Toyota",
       "Type": "SUV",
       "Year": 2023
     },
     {
-      "CarMake": "Honda",
       "CarModel": "Civic",
-      "Type": "Sedan",
+      "CarMake": "Honda",
+      "Type": "SEDAN",
       "Year": 2022
     },
     {
-      "CarMake": "Honda",
       "CarModel": "Accord",
-      "Type": "Sedan",
+      "CarMake": "Honda",
+      "Type": "SEDAN",
       "Year": 2021
     },
     {
-      "CarMake": "Honda",
       "CarModel": "CR-V",
+      "CarMake": "Honda",
       "Type": "SUV",
       "Year": 2023
     },
     {
-      "CarMake": "Ford",
       "CarModel": "Mustang",
-      "Type": "Coupe",
+      "CarMake": "Ford",
+      "Type": "COUPE",
       "Year": 2020
     },
     {
-      "CarMake": "Nissan",
       "CarModel": "Altima",
-      "Type": "Sedan",
+      "CarMake": "Nissan",
+      "Type": "SEDAN",
       "Year": 2021
     },
     {
-      "CarMake": "Audi",
       "CarModel": "A6",
-      "Type": "Sedan",
+      "CarMake": "Audi",
+      "Type": "SEDAN",
       "Year": 2022
-    },
-    {
-      "CarMake": "Mazda",
-      "CarModel": "MX-5",
-      "Type": "Convertible",
-      "Year": 2020
     }
   ]
 }

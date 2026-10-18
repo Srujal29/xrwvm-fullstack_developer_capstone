@@ -7,7 +7,17 @@
 <script>
 
 const logout = async (e) => {
-//Include the code for logout here.
+  sessionStorage.removeItem("username");
+  sessionStorage.clear();
+  let logout_url = window.location.origin + "/djangoapp/logout";
+  try {
+    const res = await fetch(logout_url, { method: "GET" });
+    const json = await res.json();
+  } catch (err) {}
+  document.getElementById("logout-alert").style.display = "block";
+  setTimeout(() => {
+    window.location.href = window.location.origin;
+  }, 1500);
 };
 
 let checkSession = ()=>{
@@ -19,13 +29,13 @@ let checkSession = ()=>{
   if (curr_user && curr_user !== "" && curr_user !== "AnonymousUser") {
     document.getElementById("loginlogout").innerHTML = 
     '<span class="homepage_links">' + curr_user +'</span>' +
-    '<a class="homepage_links" onclick="logout()" href="/djangoapp/logout">Logout</a>'
+    '<a class="homepage_links" onclick="logout()" href="javascript:void(0);">Logout</a>'
   } else {
     document.getElementById("loginlogout").innerHTML = 
     '<a class="homepage_links" href="/login">Login</a>'+
     '<a class="homepage_links"  href="/register">Register</a>'
   }
- }
+}
 </script>
 </head>
 <body onload="checkSession()">
@@ -54,6 +64,9 @@ let checkSession = ()=>{
     </div>
   </div>
 </nav>
+<div id="logout-alert" class="alert alert-success alert-dismissible fade show text-center" style="display: none; margin: 15px auto; width: 60%; font-size: 1.1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" role="alert">
+  <strong>Logged out successfully!</strong> Thanks for visiting Dealerships.
+</div>
 <div style="display: flex;flex-direction: column;">
 <div class="card" style="width: 50%;margin-top: 50px;align-self: center;">
   <img src="static/car_dealership.jpg" class="card-img-top" alt="...">
