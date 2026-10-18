@@ -1,0 +1,8 @@
+Run action
+Set up job
+Run actions/checkout@v3
+Run actions/setup-python@v4
+Install dependencies
+Run lint checks
+Run unit tests
+Job completed successfully.
