@@ -127,3 +127,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Capstone Screenshots and generation scripts
+/*.png
+generate*.py
+update_submissions.py
