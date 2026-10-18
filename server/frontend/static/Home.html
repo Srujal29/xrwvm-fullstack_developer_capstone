@@ -11,12 +11,15 @@ const logout = async (e) => {
 };
 
 let checkSession = ()=>{
-  let curr_user = sessionStorage.getItem("username");
+  let curr_user = "{{ user.username }}";
+  if (!curr_user || curr_user === "" || curr_user === "AnonymousUser") {
+    curr_user = sessionStorage.getItem("username");
+  }
 
-  if (curr_user && curr_user !== "") {
+  if (curr_user && curr_user !== "" && curr_user !== "AnonymousUser") {
     document.getElementById("loginlogout").innerHTML = 
     '<span class="homepage_links">' + curr_user +'</span>' +
-    '<a class="homepage_links" onclick="logout()" href="/">Logout</a>'
+    '<a class="homepage_links" onclick="logout()" href="/djangoapp/logout">Logout</a>'
   } else {
     document.getElementById("loginlogout").innerHTML = 
     '<a class="homepage_links" href="/login">Login</a>'+
