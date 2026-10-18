@@ -8,8 +8,13 @@ const port = 3030;
 app.use(cors());
 app.use(express.json());
 
-const reviews_data = JSON.parse(fs.readFileSync('reviews.json', 'utf8'));
-const dealerships_data = JSON.parse(fs.readFileSync('dealerships.json', 'utf8'));
+// Raw JSON parse karo
+const raw_reviews = JSON.parse(fs.readFileSync('reviews.json', 'utf8'));
+const raw_dealerships = JSON.parse(fs.readFileSync('dealerships.json', 'utf8'));
+
+// Object keys handle karne ka safety check
+const reviews_data = Array.isArray(raw_reviews) ? raw_reviews : (raw_reviews.reviews || []);
+const dealerships_data = Array.isArray(raw_dealerships) ? raw_dealerships : (raw_dealerships.dealerships || []);
 
 // Fetch all dealers
 app.get('/fetchDealers', (req, res) => {
@@ -19,7 +24,7 @@ app.get('/fetchDealers', (req, res) => {
 // Fetch dealers by state
 app.get('/fetchDealers/:state', (req, res) => {
     const state = req.params.state.toLowerCase();
-    const filtered = dealerships_data.filter(d => d.state.toLowerCase() === state);
+    const filtered = dealerships_data.filter(d => d.state && d.state.toLowerCase() === state);
     res.json(filtered);
 });
 
